@@ -216,7 +216,7 @@ article {
 }
 
 section.first {
-  height: 100vh;
+  min-height: 100vh;
   padding: 130px 30px 30px 30px;
 }
 section.first .text {

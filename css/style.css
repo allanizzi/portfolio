@@ -258,4 +258,22 @@ section.first .photo .disponibilite .cercle {
   margin-right: 10px;
 }
 
+section.second {
+  padding: 0 30px;
+}
+section.second .title {
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+section.second .title .trait-deco {
+  border: 2px solid #C0B187;
+  width: 100%;
+}
+section.second .title h2 {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */

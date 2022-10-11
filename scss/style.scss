@@ -255,3 +255,27 @@ section.first {
   }
 
 }
+
+section.second {
+
+  padding: 0 30px;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+
+    .trait-deco {
+      border: 2px solid $secondary-beige;
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+  }
+
+
+}

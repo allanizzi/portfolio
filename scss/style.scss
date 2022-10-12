@@ -12,6 +12,11 @@ $section-third-black: #343232;
   background-color: $primary-black !important;
   color: $primary-white !important;
 }
+
+.disable-home-scroll {
+  overflow: hidden;
+}
+
 * {
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -19,6 +24,11 @@ $section-third-black: #343232;
   height: 70px;
   background: $navbar-black;
   padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: inherit;
+  transition: height 300ms ease-in-out;
 }
 
 .brand {
@@ -99,13 +109,6 @@ nav ul li ul li a {
 }
 
 @media only screen and (max-width: 850px) {
-  .nav-bar {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    padding: inherit;
-    transition: height 300ms ease-in-out;
-  }
 
   .full-height-nav {
     height: 100vh;
@@ -114,6 +117,8 @@ nav ul li ul li a {
 
   .nav-list {
     padding: 40px 0;
+    height: calc(100vh - 70px);
+    overflow: scroll;
   }
   
   .nav-mobile {
@@ -280,15 +285,19 @@ section.second {
   .cards {
 
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     .card-projet {
-      background-color: $primary-white;
+      background-color: #FBFBFB;
       border-radius: 5px;
       min-height: 50vh;
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px;
-      box-shadow: 5px 5px $secondary-beige;
+      box-shadow: 5px 5px #C0B187;
+      flex: 1;
+
 
       .image {
         height: 50%;
@@ -300,10 +309,15 @@ section.second {
           height: 100%;
         }
       }
+      
 
       .infos {
         padding: 15px;
         color: $primary-black;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .title-projet {
           font-weight: bold;
@@ -314,6 +328,11 @@ section.second {
         .description-projet {
           text-align: left;
           font-size: 0.85rem;
+          overflow: hidden;
+          margin-bottom: 1rem;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
         }
 
         .cta {
@@ -333,6 +352,21 @@ section.second {
       }
     }
   }
+}
 
+@media only screen and (min-width: 780px) {
+  section.second {
+    .cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .card-projet {
+        min-height: 430px;
+        height: 430px;
+        .description-projet {
+          -webkit-line-clamp: 4 !important;
 
+        }
+      }
+    }
+  }
 }

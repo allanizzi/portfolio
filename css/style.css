@@ -301,11 +301,12 @@ section.second .cards .card-projet .infos {
 }
 section.second .cards .card-projet .infos .title-projet {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 section.second .cards .card-projet .infos .description-projet {
   text-align: left;
+  font-size: 0.8rem;
 }
 section.second .cards .card-projet .infos .cta {
   display: flex;

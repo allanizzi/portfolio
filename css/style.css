@@ -307,7 +307,7 @@ section.second .cards .card-projet .infos .title-projet {
 }
 section.second .cards .card-projet .infos .description-projet {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 section.second .cards .card-projet .infos .cta {
   display: flex;
@@ -315,7 +315,7 @@ section.second .cards .card-projet .infos .cta {
   justify-content: center;
 }
 section.second .cards .card-projet .infos .cta .cta-voir-projet {
-  padding: 5px 20px;
+  padding: 8px 30px;
   border-radius: 5px;
   border: none;
   color: #FBFBFB;

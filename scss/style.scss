@@ -284,7 +284,7 @@ section.second {
     .card-projet {
       background-color: $primary-white;
       border-radius: 5px;
-      height: 50vh;
+      min-height: 50vh;
       display: flex;
       flex-direction: column;
       margin-bottom: 30px;

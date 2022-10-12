@@ -100,7 +100,7 @@ nav ul li ul li a {
 
 @media only screen and (max-width: 850px) {
   .nav-bar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 10;
     padding: inherit;
@@ -274,6 +274,61 @@ section.second {
     h2 {
       margin: 0 15px;
       font-weight: bold;
+    }
+  }
+
+  .cards {
+
+    margin: 20px 0;
+
+    .card-projet {
+      background-color: $primary-white;
+      border-radius: 5px;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      .image {
+        height: 50%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px 5px 0 0;
+          height: 100%;
+        }
+      }
+
+      .infos {
+        padding: 15px;
+        color: $primary-black;
+
+        .title-projet {
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-align: left;
+        }
+
+        .description-projet {
+          text-align: left;
+        }
+
+        .cta {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .cta-voir-projet {
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: none;
+            color: $primary-white;
+            background-color: $primary-black;
+          }
+        }
+        
+      }
     }
   }
 

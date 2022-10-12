@@ -285,6 +285,7 @@ section.second .cards .card-projet {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  box-shadow: 5px 5px #C0B187;
 }
 section.second .cards .card-projet .image {
   height: 50%;

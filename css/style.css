@@ -218,6 +218,26 @@ article {
   padding: 10px;
 }
 
+.ovrflow {
+  overflow: hidden;
+}
+
+section.second .title, section.fourth .title {
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+section.second .title .trait-deco, section.fourth .title .trait-deco {
+  border: 2px solid #C0B187;
+  flex: 1;
+}
+section.second .title h2, section.fourth .title h2 {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 section.first {
   min-height: 100vh;
   padding: 130px 30px 30px 30px;
@@ -264,21 +284,6 @@ section.first .photo .disponibilite .cercle {
 section.second {
   padding: 0 30px;
   margin-bottom: 40px;
-}
-section.second .title {
-  text-align: center;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-}
-section.second .title .trait-deco {
-  border: 2px solid #C0B187;
-  width: 100%;
-}
-section.second .title h2 {
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.8rem;
 }
 section.second .cards {
   margin: 20px 0;
@@ -381,6 +386,10 @@ section.third .background .cta .cta-decouvrir {
   border: none;
   color: #151414;
   background-color: #FBFBFB;
+}
+
+section.fourth {
+  margin: 70px 0;
 }
 
 @media only screen and (min-width: 780px) {

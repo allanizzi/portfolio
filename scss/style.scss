@@ -204,6 +204,29 @@ article {
 }
 
 
+.ovrflow {
+  overflow: hidden;
+}
+
+section.second, section.fourth {
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+
+    .trait-deco {
+      border: 2px solid $secondary-beige;
+      flex: 1;
+    }
+
+    h2 {
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+}
 
 section.first {
   min-height: 100vh;
@@ -265,24 +288,6 @@ section.second {
 
   padding: 0 30px;
   margin-bottom: 40px;
-
-  .title {
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-
-    .trait-deco {
-      border: 2px solid $secondary-beige;
-      width: 100%;
-    }
-
-    h2 {
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.8rem;
-    }
-  }
 
   .cards {
 
@@ -410,6 +415,12 @@ section.third {
     }
   }
 }
+
+section.fourth {
+  margin: 70px 0;
+
+}
+
 
 @media only screen and (min-width: 780px) {
   section.second {

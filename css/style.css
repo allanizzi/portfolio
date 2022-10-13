@@ -278,6 +278,7 @@ section.second .title .trait-deco {
 section.second .title h2 {
   margin: 0 15px;
   font-weight: bold;
+  font-size: 1.8rem;
 }
 section.second .cards {
   margin: 20px 0;
@@ -362,6 +363,7 @@ section.third .background .title {
 }
 section.third .background .title h2 {
   font-weight: bold;
+  font-size: 1.8rem;
 }
 section.third .background .presentation {
   text-align: center;

@@ -417,8 +417,15 @@ section.third {
 }
 
 section.fourth {
-  margin: 70px 0;
+  margin: 70px 30px;
 
+  .description {
+    text-align: center;
+    margin: 20px 0;
+    h2 {
+      font-size: 1rem;
+    }
+  }
 }
 
 

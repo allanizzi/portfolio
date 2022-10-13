@@ -264,6 +264,7 @@ section.first {
 section.second {
 
   padding: 0 30px;
+  margin-bottom: 40px;
 
   .title {
     text-align: center;
@@ -351,6 +352,19 @@ section.second {
         
       }
     }
+  }
+
+  .voir-plus {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+
+    a {
+      color: $primary-white;
+      text-decoration: underline;
+      font-size: 1.2rem;
+    }
+
   }
 }
 

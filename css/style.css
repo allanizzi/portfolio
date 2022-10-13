@@ -263,6 +263,7 @@ section.first .photo .disponibilite .cercle {
 
 section.second {
   padding: 0 30px;
+  margin-bottom: 40px;
 }
 section.second .title {
   text-align: center;
@@ -335,6 +336,16 @@ section.second .cards .card-projet .infos .cta .cta-voir-projet {
   border: none;
   color: #FBFBFB;
   background-color: #151414;
+}
+section.second .voir-plus {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+section.second .voir-plus a {
+  color: #FBFBFB;
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 780px) {

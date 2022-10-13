@@ -368,6 +368,47 @@ section.second {
   }
 }
 
+section.third {
+
+  margin-bottom: 30px;
+
+  .background {
+    background-color: $section-third-black;
+    padding: 20px;
+
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 10px 0;
+
+      h2 {
+        font-weight: bold;
+        
+      }
+    }
+
+    .presentation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0 10px 0;
+
+      .cta-decouvrir {
+        padding: 8px 30px;
+        border-radius: 5px;
+        border: none;
+        color: $primary-black;
+        background-color: $primary-white;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 780px) {
   section.second {
     .cards {

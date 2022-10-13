@@ -348,6 +348,39 @@ section.second .voir-plus a {
   font-size: 1.2rem;
 }
 
+section.third {
+  margin-bottom: 30px;
+}
+section.third .background {
+  background-color: #343232;
+  padding: 20px;
+}
+section.third .background .title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+section.third .background .title h2 {
+  font-weight: bold;
+}
+section.third .background .presentation {
+  text-align: center;
+  margin: 20px 0;
+}
+section.third .background .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+section.third .background .cta .cta-decouvrir {
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: none;
+  color: #151414;
+  background-color: #FBFBFB;
+}
+
 @media only screen and (min-width: 780px) {
   section.second .cards {
     flex-direction: row;

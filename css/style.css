@@ -448,10 +448,20 @@ section.footer {
     -webkit-line-clamp: 4 !important;
   }
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   section.first {
     flex-direction: row;
     gap: 100px;
+  }
+}
+@media only screen and (min-width: 1120px) {
+  section.first .photo {
+    max-width: 30vw;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  section.first .photo {
+    max-width: 20vw;
   }
 }
 

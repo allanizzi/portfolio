@@ -450,6 +450,7 @@ section.footer {
     min-height: 320px;
     height: 320px;
     flex-direction: row;
+    width: calc(100vw / 2 - 55px);
   }
   section.second .cards .card-projet .image {
     height: 100%;
@@ -478,6 +479,16 @@ section.footer {
 @media only screen and (min-width: 1480px) {
   section.first .photo {
     max-width: 450px;
+  }
+}
+@media only screen and (min-width: 1701px) and (max-width: 1999px) {
+  section.second .card-projet {
+    width: calc(100vw / 3 - 40px) !important;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  section.second .card-projet {
+    width: calc(2000px / 4 - 40px) !important;
   }
 }
 

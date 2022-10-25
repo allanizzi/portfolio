@@ -385,6 +385,8 @@ section.third {
 section.third .background {
   background-color: #343232;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 section.third .background .title {
   text-align: center;
@@ -472,6 +474,19 @@ section.footer {
   }
   section.second .voir-plus {
     display: none;
+  }
+
+  section.third .background {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+  }
+  section.third .background .titre-presentation .title, section.third .background .titre-presentation .presentation {
+    text-align: left;
+  }
+  section.third .background .cta {
+    margin: inherit;
   }
 }
 @media only screen and (min-width: 950px) {

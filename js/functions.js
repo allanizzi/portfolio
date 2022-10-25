@@ -22,4 +22,24 @@
 //     window.onresize = handle;
 //     window.onload = handle;
 
+function myFunction(event) {
+
+    // let y = event.deltaY;
+
+    // scroll down
+    // if (y > 0) {
+    //     document.getElementsByClassName("carousel-photos")[0].scrollLeft += 50;
+    // }
+    // // scroll up
+    // else {
+    //     document.getElementsByClassName("carousel-photos")[0].scrollLeft -= 50;
+    // }
+
+    // if (document.getElementsByClassName("carousel-photos")[0].scrollLeft == 0 ) {
+    //     document.getElementsByClassName("carousel-photos")[0].style.overscrollBehavior = "auto";
+    // }
+    // else {
+    //     document.getElementsByClassName("carousel-photos")[0].style.overscrollBehavior = "contain";
+    // }
+}
 

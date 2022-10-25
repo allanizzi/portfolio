@@ -20,7 +20,7 @@ body {
   background: #2A2828;
   padding: 0 20px;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   padding: inherit;
   transition: height 300ms ease-in-out;
@@ -429,8 +429,8 @@ section.fourth .carousel-photos {
   display: flex;
   overflow-x: scroll;
   padding: 24px;
-  scroll-snap-type: x mandatory;
   gap: 20px;
+  cursor: pointer;
 }
 section.fourth .carousel-photos .image {
   flex: 0 0 100%;
@@ -441,11 +441,34 @@ section.fourth .carousel-photos .image img {
   width: 100%;
   height: 100%;
 }
+section.fourth .carousel-photos .image .voir-plus {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.fourth .carousel-photos .image .voir-plus a {
+  color: #FBFBFB;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+section.fourth .carousel-photos .plus {
+  max-width: 12rem !important;
+}
 
 section.footer {
   text-align: center;
 }
 
+@media only screen and (min-width: 425px) {
+  section.fourth .carousel-photos {
+    justify-content: space-between;
+  }
+  section.fourth .carousel-photos .image {
+    max-width: 18rem;
+  }
+}
 @media only screen and (min-width: 780px) {
   section.second .cards {
     flex-direction: row;

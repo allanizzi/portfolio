@@ -365,6 +365,9 @@ section.second .cards .card-projet .infos .cta .cta-voir-projet {
   color: #FBFBFB;
   background-color: #151414;
 }
+section.second .cards .angeluzzo, section.second .cards .subring {
+  display: none;
+}
 section.second .voir-plus {
   width: 100%;
   text-align: center;
@@ -463,6 +466,12 @@ section.footer {
   }
   section.second .cards .card-projet .infos .description-projet {
     -webkit-line-clamp: 4 !important;
+  }
+  section.second .cards .angeluzzo, section.second .cards .subring {
+    display: inherit;
+  }
+  section.second .voir-plus {
+    display: none;
   }
 }
 @media only screen and (min-width: 950px) {

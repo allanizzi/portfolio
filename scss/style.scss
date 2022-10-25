@@ -319,6 +319,7 @@ section.second {
     gap: 30px;
     justify-content: center;
 
+
     .card-projet {
       background-color: #FBFBFB;
       border-radius: 5px;
@@ -380,6 +381,10 @@ section.second {
         }
         
       }
+    }
+
+    .angeluzzo, .subring {
+      display: none;
     }
   }
 
@@ -523,6 +528,14 @@ section.footer {
         }
         
       }
+
+      .angeluzzo, .subring {
+        display: inherit;
+      }
+    }
+
+    .voir-plus {
+      display: none;
     }
   }
 }

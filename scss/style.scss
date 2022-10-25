@@ -408,7 +408,7 @@ section.third {
 
   .background {
     background-color: $section-third-black;
-    padding: 20px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
 
@@ -556,7 +556,7 @@ section.footer {
   section.third {
     .background {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       // padding: 20px 5rem;
       gap: 50px;

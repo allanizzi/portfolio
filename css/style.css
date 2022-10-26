@@ -425,12 +425,41 @@ section.fourth .description {
 section.fourth .description h2 {
   font-size: 1rem;
 }
+section.fourth .images {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+section.fourth .images .fleche-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  border-radius: 100%;
+  cursor: pointer;
+}
+section.fourth .images .fleche-nav svg {
+  filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(96deg) brightness(107%) contrast(101%);
+}
+section.fourth .images .precedent {
+  padding-right: 5px;
+}
+section.fourth .images .suivant {
+  padding-left: 5px;
+}
 section.fourth .carousel-photos {
   display: flex;
   overflow-x: scroll;
-  padding: 24px;
+  scroll-snap-type: x mandatory;
   gap: 20px;
-  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
 }
 section.fourth .carousel-photos .image {
   flex: 0 0 100%;
@@ -510,6 +539,14 @@ section.footer {
   }
   section.third .background .cta {
     margin: inherit;
+  }
+
+  section.fourth .images .fleche-nav {
+    display: flex;
+  }
+  section.fourth .images .carousel-photos {
+    width: 87%;
+    overflow-x: hidden;
   }
 }
 @media only screen and (min-width: 950px) {

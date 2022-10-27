@@ -272,6 +272,43 @@ section.first {
         font-size: 1rem;
       }
     } 
+
+    .chiffres-moi {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      max-width: 60vw;
+      margin: 50px auto;
+      gap: 50px;
+      flex-wrap: wrap;
+
+      .chiffre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 210px;
+        gap: 10px;
+
+        .counter-number {
+          font-size: 2.5rem;
+          color: $secondary-beige;
+        }
+
+        .icon-txt {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        
+      }
+    }
   }
 
   .photo {
@@ -558,6 +595,13 @@ section.footer {
 }
 
 @media only screen and (min-width: 780px) {
+  
+  section.first {
+    .text .chiffres-moi .chiffre .icon-txt {
+      flex-direction: row;
+    }
+  }
+
   section.second {
     .cards {
       flex-direction: row;
@@ -594,7 +638,6 @@ section.footer {
       display: none;
     }
   }
-
 
   section.third {
     .background {

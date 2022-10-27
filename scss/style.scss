@@ -108,56 +108,7 @@ nav ul li ul li a {
   width: 70px;
 }
 
-@media only screen and (max-width: 850px) {
 
-  .full-height-nav {
-    height: 100vh;
-    transition: height 300ms ease-in-out;
-  }
-
-  .nav-list {
-    padding: 40px 0;
-    height: calc(100vh - 70px);
-    overflow: scroll;
-  }
-  
-  .nav-mobile {
-    display: block;
-  }
-
-  nav {
-    width: 100%;
-    padding: 70px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 40px;
-	padding-left: 10%;
-  text-transform: uppercase;
-	 
-  }
-  nav ul li ul li a {
-    padding-left: 20%;
-  }
-
-  .nav-dropdown {
-    position: static;
-  }
-	.brand a img {
-		max-height: 50px;
-	}
-}
-@media screen and (min-width: 851px) {
-  .nav-list {
-    display: block !important;
-  }
-}
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -330,7 +281,10 @@ section.first {
       margin-top: 20px;
 
       .cercle {
-        background-color: #18c618;
+        background-color: $navbar-black;
+        animation-name: disponibilite;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         width: 17px;
         height: 17px;
         border-radius: 50%;
@@ -582,6 +536,57 @@ section.footer {
 }
 
 
+@media only screen and (max-width: 850px) {
+
+  .full-height-nav {
+    height: 100vh;
+    transition: height 300ms ease-in-out;
+  }
+
+  .nav-list {
+    padding: 40px 0;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+  }
+  
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 40px;
+	padding-left: 10%;
+  text-transform: uppercase;
+	 
+  }
+  nav ul li ul li a {
+    padding-left: 20%;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+	.brand a img {
+		max-height: 50px;
+	}
+}
+@media screen and (min-width: 851px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
 @media only screen and (min-width: 425px) {
   section.fourth {
     .carousel-photos {
@@ -715,4 +720,10 @@ section.footer {
       }
     }
 
+}
+
+@keyframes disponibilite {
+  0%   {background-color: $navbar-black;}
+  50%  {background-color:#2dd92d;}
+  100% {background-color: $navbar-black;}
 }

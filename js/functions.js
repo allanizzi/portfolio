@@ -11,7 +11,9 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    $('.suivant').bind('tap',function() {  alert('Tap event triggered'); });
-    $('.suivant').bind('click',function() {  console.log('Tap event triggered'); });
+    $('.images').on('click','.suivant', function(e){
+        e.preventDefault();
+        alert("hello");
+    });
 
 })(jQuery); // End of use strict

@@ -13,7 +13,7 @@
 
 $('.suivant').on('click touchstart', function() {
     document.getElementsByClassName("carousel-photos")[0].scrollLeft += 300;
-    console.log("suivant");
+    console.log("suivant 2");
 });
 
 })(jQuery); // End of use strict

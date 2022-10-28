@@ -72,7 +72,7 @@
         }, delta);
       };
       
-      window.onload = function() {
+      $(window).ready(function() {
         var elements = document.getElementsByClassName('txt-write');
         for (var i=0; i<elements.length; i++) {
           var toRotate = elements[i].getAttribute('data-rotate');
@@ -86,7 +86,7 @@
         css.type = "text/css";
         css.innerHTML = ".txt-write > .wrap { border-right: 0.12em solid #C0B187 }";
         document.body.appendChild(css);
-      };
+      });
   
       //fin text écrit
 

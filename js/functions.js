@@ -5,5 +5,6 @@ function precedent() {
 
 function suivant() {
     document.getElementsByClassName("carousel-photos")[0].scrollLeft += 300;
+    alert("hello");
 }
 

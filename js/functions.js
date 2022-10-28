@@ -1,17 +1,19 @@
-function precedent() {
+// function precedent() {
 
-    document.getElementsByClassName("carousel-photos")[0].scrollLeft -= 300;
-}
+//     document.getElementsByClassName("carousel-photos")[0].scrollLeft -= 300;
+// }
 
-function suivant() {
+// function suivant() {
+//     document.getElementsByClassName("carousel-photos")[0].scrollLeft += 300;
+//     alert("hello");
+// }
+
+(function($) {
+    "use strict"; // Start of use strict
+
+$('.suivant').on('click touchstart', function() {
     document.getElementsByClassName("carousel-photos")[0].scrollLeft += 300;
-}
+    console.log("suivant");
+});
 
-// (function($) {
-//     "use strict"; // Start of use strict
-
-// $('.suivant').on('click touchstart', function() {
-//     alert("allan");
-// });
-
-// })(jQuery); // End of use strict
+})(jQuery); // End of use strict

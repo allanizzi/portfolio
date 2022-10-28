@@ -11,9 +11,7 @@
 (function($) {
     "use strict"; // Start of use strict
 
-$('.suivant').on('click touchstart', function() {
-    document.getElementsByClassName("carousel-photos")[0].scrollLeft += 300;
-    console.log("suivant 2");
-});
+    $('.suivant').bind('tap',function() {  alert('Tap event triggered'); });
+    $('.suivant').bind('click',function() {  console.log('Tap event triggered'); });
 
 })(jQuery); // End of use strict
